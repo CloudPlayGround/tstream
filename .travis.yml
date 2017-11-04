@@ -12,7 +12,6 @@ node_js: '8'
 cache: yarn
 
 script:
-  - mvn clean package -U
   - docker build -t $DOCKER_USERNAME/twitterstreamservice .
 
 after_success:
